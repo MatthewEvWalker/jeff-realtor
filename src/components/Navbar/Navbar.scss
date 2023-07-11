@@ -36,17 +36,13 @@ body {
     // padding-bottom: 0;
 }
 
-// .nav li.active {
-//     background-color: rgb(103, 103, 110);
-// }
-
-.nav li:hover {
-    // background-color: #555555;
-    color: rgb(101, 101, 218);
+.nav .link-btn {
     text-decoration: none;
+    position: relative;
 }
 
-.nav a::after {
+  
+.nav .link-btn::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -58,6 +54,12 @@ body {
     transition: transform 0.3s ease-in-out;
 }
   
-.nav a:hover::after {
+.nav .link-btn:hover::after,
+.nav .link-btn.active::after {
     transform: scaleX(1);
+}
+  
+.nav a.active {
+    color: rgb(101, 101, 218);
+    text-decoration: none;
 }

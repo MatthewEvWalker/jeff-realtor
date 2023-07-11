@@ -4,9 +4,10 @@ import './Layout.scss';
 
 const Layout = () => {
     return (
-     <>
-       <Navbar/>
-     </>
+      <div className="App">
+      <Navbar/>
+        <Outlet/>
+      </div>
     )
 }
 

@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './Navbar.scss';
 
 export default function Navbar() {
@@ -6,24 +6,24 @@ export default function Navbar() {
     return (
 
         <nav className='nav'>    
-            <a className='logo-name'>
+            <Link className='logo-name' to="/">
                 WALKER REALTY
-            </a> 
+            </Link> 
                 <ul>
-                    <li className='active'>
-                        <Link className='link-btn'to="/"> BUY </Link>
+                    <li>
+                        <NavLink exact="true" activeclassName='active' className='link-btn'to="/buy"> BUY </NavLink>
                     </li>
                     <li>
-                        <Link className='link-btn'to="/">SELL</Link>
+                        <NavLink exact="true" activeclassName='active' className='link-btn'to="/sell">SELL</NavLink>
                     </li>
                     <li>
-                        <Link className='link-btn'to="/">ABOUT</Link>
+                        <NavLink exact="true" activeclassName='active' className='link-btn'to="/about">ABOUT</NavLink>
                     </li>
                     <li>
-                        <Link className='link-btn'to="/">SOCIAL</Link>
+                        <NavLink exact="true" activeclassName='active' className='link-btn'to="/social">SOCIAL</NavLink>
                     </li>
                     <li>
-                        <Link className='link-btn'to="/">CONTACT</Link>
+                        <NavLink exact="true" activeclassName='active' className='link-btn'to="/contact">CONTACT</NavLink>
                     </li>
                 </ul> 
         </nav>
