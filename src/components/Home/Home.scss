@@ -5,7 +5,7 @@
 
 .photo-carousel {
     width: 100vw;
-    height: 700px;
+    height: 750px;
     position: relative;
 }
 
@@ -27,11 +27,16 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
+    // overflow: hidden;
 }
 
 .slide[data-active] {
     opacity: 1;
     transition: opacity 1s ease-in-out;
+}
+
+.slide-hidden {
+    display: none;
 }
 
 .icon {
@@ -50,6 +55,11 @@
     background-color: rgba(0, 0, 0, 0.5);
     cursor: pointer;
 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+
     i {
         transition: all 0.3s ease-out;
     }
@@ -58,7 +68,6 @@
         color: #0077B6;
         // color: #CAF0F8;
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        
 
         svg {
             opacity: .5;
@@ -76,4 +85,24 @@
 
 .icon.right {
     right: 1rem;
+}
+
+.carousel-nav {
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.carousel-circle {
+    border: 0;
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0 0.5rem;
+}
+
+.carousel-circle.active-slide {
+    background-color: #0077B6;
 }
