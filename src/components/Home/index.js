@@ -55,7 +55,7 @@ const Home = () => {
             <button
               key={index}
               className={`carousel-circle ${
-                index === currentImage ? "carousel-circle.active-slide" : ""
+                index === currentImage ? "active-slide" : ""
               }`}
               onClick={() => handleJumpToImage(index)}
             ></button>
