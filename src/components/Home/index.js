@@ -1,5 +1,5 @@
 // import { Link } from "react-router-dom";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Home.scss";
 import lake from "../../assets/images/lake.jpg";
 import austinNight from "../../assets/images/nighttime-austin.jpg";
@@ -20,8 +20,20 @@ const Home = () => {
     setCurrentImage((currentImage + 1) % images.length);
   };
 
+  useEffect(() => {
+    const interval = setInterval(handleNextImage, 5000);
+
+    return () => {
+      clearInterval(interval);
+    };
+  });
+
   const handlePrevImage = () => {
-    setCurrentImage((currentImage - 1) % images.length);
+    if (currentImage === 0) {
+      setCurrentImage(images.length - 1);
+    } else {
+      setCurrentImage(currentImage - 1);
+    }
   };
 
   const handleJumpToImage = (index) => {
@@ -61,6 +73,14 @@ const Home = () => {
             ></button>
           ))}
         </div>
+
+        <section >
+
+
+
+        </section>
+
+
       </div>
     </>
   );

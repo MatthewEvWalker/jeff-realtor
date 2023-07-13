@@ -32,7 +32,6 @@
 
 .slide[data-active] {
     opacity: 1;
-    transition: opacity 1s ease-in-out;
 }
 
 .slide-hidden {
@@ -88,7 +87,6 @@
 }
 
 .carousel-nav {
-    background-color: pink;
     display: flex;
     justify-content: center;
     padding: 10px 0;
