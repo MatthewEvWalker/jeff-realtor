@@ -1,36 +1,79 @@
-// body {
-//     background-color: #945151;
-//     padding: 0;
-//     margin: auto;
-// }
+.home {
+    padding: 0;
+    margin: 0;
+}
 
-// img {
-//     position: absolute;
-//     width: 100%;
-//     // max-width: 1600px;
-// }
+.photo-carousel {
+    width: 100vw;
+    height: 700px;
+    position: relative;
+}
 
-// .image-container {
-//     // position: absolute;
-//     height: 100vh;
-//     width: 100vh;
-//     /* max-width: 1600px; */
-// }
+.photo-carousel > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
+.slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+}
 
-// @keyframes changeBackground {
-//     from, 
+.slide > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
 
-//     to {
-//       background-image: url("/assets/images/austin-min.jpg");
-//     }
-//     33% {
-//       background-image: url("/assets/images/bridge.jpg");
-//     }
-//     66% {
-//       background-image: url("/assets/images/skyline-min.jpeg");
-//     }
-//     100% {
-//       background-image: url("/assets/images/nighttime-austin.jpg");
-//     }
-//   }
+.slide[data-active] {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+.icon {
+    font-size: 4rem;
+    z-index: 2;
+    color: #ffffff;
+    display: block;
+    line-height: 51px;
+    height: 51px;
+    position: absolute;
+    text-decoration: none;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+
+    i {
+        transition: all 0.3s ease-out;
+    }
+
+    &:hover {
+        color: #0077B6;
+        // color: #CAF0F8;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+
+        svg {
+            opacity: .5;
+        }
+
+        &:after {
+            opacity: 1;
+        }
+    }
+}
+
+.icon.left {
+    left: 1rem;
+}
+
+.icon.right {
+    right: 1rem;
+}

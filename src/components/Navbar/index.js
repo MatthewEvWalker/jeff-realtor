@@ -11,6 +11,9 @@ export default function Navbar() {
             </Link> 
                 <ul>
                     <li>
+                        <NavLink exact="true" activeclassName='active' className='link-btn'to="/"> HOME </NavLink>
+                    </li>
+                    <li>
                         <NavLink exact="true" activeclassName='active' className='link-btn'to="/buy"> BUY </NavLink>
                     </li>
                     <li>
