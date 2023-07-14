@@ -1,11 +1,12 @@
 .home {
     padding: 0;
     margin: 0;
+    min-height: 100vh;
 }
 
 .photo-carousel {
     width: 100vw;
-    height: 750px;
+    height: 550px;
     position: relative;
 }
 
@@ -104,4 +105,8 @@
 
 .carousel-circle.active-slide {
     background-color: #0077B6;
+}
+
+.text-area {
+    padding: 50px;
 }
