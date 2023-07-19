@@ -1,14 +1,14 @@
 import './App.scss';
-import { Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer'
 
-import Layout from './components/Layout';
+// import Layout from './components/Layout';
 import Buy from './components/Buy'
 import Sell from './components/Sell'
 import About from './components/About'
-import { useState } from 'react'
+// import { useState } from 'react'
 
 
 function App() {

@@ -91,9 +91,6 @@ const Home = () => {
             <p>
             Amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus. Parturient montes nascetur ridiculus mus mauris vitae ultricies leo. Magnis dis parturient montes nascetur. Tincidunt tortor aliquam nulla facilisi. Id porta nibh venenatis cras sed felis eget. Neque viverra justo nec ultrices dui sapien eget mi. Vitae suscipit tellus mauris a diam maecenas. Eleifend donec pretium vulputate sapien nec sagittis. Dolor purus non enim praesent elementum facilisis leo vel. Condimentum lacinia quis vel eros donec ac. Adipiscing enim eu turpis egestas pretium aenean pharetra magna ac. Habitant morbi tristique senectus et netus et malesuada.
             </p>
-
-
-
         </section>
 
 
