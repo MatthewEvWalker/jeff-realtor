@@ -10,6 +10,10 @@ body {
     align-items: center;
     gap: 2rem;
     padding: 0 1rem;
+    position: fixed;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    opacity: 0.9;
 }
 
 .logo-name {
@@ -64,6 +68,10 @@ body {
     color: rgb(101, 101, 218);
     text-decoration: none;
 }
+
+// .nav.shadow {
+//     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Enable shadow on scrolling */
+// }
 
 .logo-name:hover {
     color: rgb(101, 101, 218);

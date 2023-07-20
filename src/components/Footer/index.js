@@ -6,25 +6,21 @@ export default function Footer() {
     return (
 
         <footer className='footer'>    
-            Footer
                 <ul>
                     <li>
-                        <NavLink exact="true" activeclassName='active' className='link-btn'to="/"> HOME </NavLink>
+                        <NavLink exact="true" activeclassName='active' className='link-btn'to="/"> ABOUT </NavLink>
                     </li>
                     <li>
-                        <NavLink exact="true" activeclassName='active' className='link-btn'to="/buy"> BUY </NavLink>
+                        <NavLink exact="true" activeclassName='active' className='link-btn'to="/buy"> CAREERS </NavLink>
                     </li>
                     <li>
-                        <NavLink exact="true" activeclassName='active' className='link-btn'to="/sell">SELL</NavLink>
+                        <NavLink exact="true" activeclassName='active' className='link-btn'to="/sell">CONTACT</NavLink>
                     </li>
                     <li>
-                        <NavLink exact="true" activeclassName='active' className='link-btn'to="/about">ABOUT</NavLink>
+                        <NavLink exact="true" activeclassName='active' className='link-btn'to="/about">PLACEHOLDER</NavLink>
                     </li>
                     <li>
-                        <NavLink exact="true" activeclassName='active' className='link-btn'to="/social">SOCIAL</NavLink>
-                    </li>
-                    <li>
-                        <NavLink exact="true" activeclassName='active' className='link-btn'to="/contact">CONTACT</NavLink>
+                        <NavLink exact="true" activeclassName='active' className='link-btn'to="/social">SOMETHING</NavLink>
                     </li>
                 </ul> 
         </footer>
